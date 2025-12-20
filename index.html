@@ -19,16 +19,21 @@
     <!-- App bundle from Vite build -->
     <script type="module" crossorigin src="./assets/index-UnvsWVGO.js"></script>
 
-    <!-- Font overrides -->
+   <!-- Font overrides -->
     <style>
-      body {
-        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      /* Default everything to Inter */
+      html, body, #root, * {
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
       }
-      h1, h2, h3 {
-        font-family: "Merriweather", "Times New Roman", serif;
+  
+      /* Headings use Merriweather */
+      h1, h2, h3, .heading, .title {
+        font-family: "Merriweather", "Times New Roman", serif !important;
       }
+  
+      /* Optional: any special serif blocks */
       .serif {
-        font-family: "Merriweather", "Times New Roman", serif;
+        font-family: "Merriweather", "Times New Roman", serif !important;
       }
     </style>
   </head>
